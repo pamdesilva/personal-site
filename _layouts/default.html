@@ -15,37 +15,58 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
- <!-- Main component for a primary marketing message or call to action -->
- <div class="container">
+  <div class="full-container">  
 
+    <div class="col-left">
+      <img class="profilepic" src="/assets/img/profile_square.jpg" alt="">
+      <h1>Pam De Silva</h1>
+      <h4>Content Strategist</h4>
+      <small><i class="fa fa-map-marker"> </i> Kuala Lumpur</small>
 
-    {{ content }}
+      <hr>
 
-    <hr>
-    <ul class="list-inline socialicons">
-      <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
-      <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
-      <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
-    </ul>
+      <section>
+        <ul class="list-unstyled socialicons">
+          <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+          <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
+          <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
+        </ul>
+      </section>
+    </div>
 
-    <hr>
+    <div class="col-right">
 
-    <h2>Recent writing</h2>
+      <div class="container">
+        <section class="main-text">
+          {{ content }}
+        </section>
 
-      <ul class="posts post-list mediumfeed" id="container">
-        here
-      </ul>
+        <hr>
 
-  <script type="text/html" id="exampleTemplate">
-    <li class="post-stub" >
-      <a title="<!=title!>" href="<!=link!>"><!=title!></a>
-    </li>
-  </script>
+        <section>
+          <h2>A few things I've written recently</h2>
+          <ul class="posts post-list mediumfeed" id="container">
+          loading posts from Medium...
+          </ul>
+        </section>
+        
+        <hr>
+
+        <footer>
+          <small>Hacked together with <a href="https://jekyllrb.com/">Jekyll</a> and hosted with <i class="fa fa-heart"></i> on <a href="https://github.com/pammkins">GitHub Pages</a>.</small>
+        </footer>
+      </div>
+    
+    </div>
+
+   </div> 
 
   </div>
 
@@ -59,6 +80,12 @@
    },
    entryTemplate: 'exampleTemplate'
     });
+  </script>
+
+  <script type="text/html" id="exampleTemplate">
+    <li class="post-stub" >
+      <a title="<!=title!>" href="<!=link!>"><!=title!></a>
+    </li>
   </script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>

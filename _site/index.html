@@ -16,19 +16,41 @@
 
   <link rel="canonical" href="http://yourdomain.com/">
   <link rel="alternate" type="application/rss+xml" title="Pam De Silva" href="http://yourdomain.com/feed.xml" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
- <!-- Main component for a primary marketing message or call to action -->
- <div class="container">
+  <div class="full-container">  
 
+    <div class="col-left">
+      <img class="profilepic" src="/assets/img/profile_square.jpg" alt="">
+      <h1>Pam De Silva</h1>
+      <h4>Content Strategist</h4>
+      <small><i class="fa fa-map-marker"> </i> Kuala Lumpur</small>
 
-    <h1 id="hi-there-im-pam">Hi there, I’m Pam.</h1>
+      <hr>
 
-<h2 id="when-im-not-on-the-prowl-for-a-good-waffle-in-kuala-lumpur-i-use-content-marketing-to-help-great-companies-woo-new-users-and-make-their-current-ones-love-them-even-more">When I’m not on the prowl for a good waffle in Kuala Lumpur, I use content marketing to help great companies woo new users and make their current ones love them even more.</h2>
+      <section>
+        <ul class="list-unstyled socialicons">
+          <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+          <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
+          <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
+        </ul>
+      </section>
+    </div>
 
-<p>No two gigs are ever the same. I’ve done everything from working with a celebrity blogger, handling branding and PR for whimsical F&amp;B ventures, spreading the importance of learning English.. and then some. I’ve even helped a unicorn startup with their email marketing.</p>
+    <div class="col-right">
+
+      <div class="container">
+        <section class="main-text">
+          <h2 id="hi-there-im-pam">Hi there, I’m Pam.</h2>
+
+<p>When I’m not on the prowl for a good waffle in Kuala Lumpur, I use <strong>content marketing</strong> to help great companies woo new users and make their current ones love them even more.</p>
+
+<p>No two gigs are ever the same. I’ve done everything from working with a celebrity blogger, handling branding and PR for whimsical F&amp;B ventures, spreading the importance of learning English.. and then some. I’ve even helped a <em>unicorn</em> startup with their email marketing.</p>
 
 <p>Here’s what I do most:</p>
 
@@ -43,32 +65,31 @@
 
 <p>When it comes to clients, I’m a <em>less is more</em> kind of person. Trying to juggle 42 different projects at the same time isn’t quite my cup of <a href="https://en.wikipedia.org/wiki/Teh_tarik">teh tarik</a>.</p>
 
-<p>Yes, I work remotely, but I rather not be <em>‘that content person somewhere over there in Asia who writes us a thousand words a month’</em>. I’m here to work with your team to help you do content marketing that can actually help you grow.</p>
+<p>Yes, I work remotely, but I’d rather not be <em>‘that content person somewhere over there in Asia who writes us a thousand words a month’</em>. I’m here to work with your team to help you do content marketing that can actually help you grow.</p>
 
-<p>Think we’d be a good match? Let’s have a chat: #swiperight and find me below or send a good old-fashioned <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#109;&#046;&#100;&#101;&#115;&#105;&#108;&#118;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a>.</p>
+<p>Think we’d be a good match? Let’s have a chat: #swiperight and <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#109;&#046;&#100;&#101;&#115;&#105;&#108;&#118;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">get in touch</a>.</p>
 
+        </section>
 
-    <hr>
-    <ul class="list-inline socialicons">
-      <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
-      <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
-      <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
-    </ul>
+        <hr>
 
-    <hr>
+        <section>
+          <h2>A few things I've written recently</h2>
+          <ul class="posts post-list mediumfeed" id="container">
+          loading posts from Medium...
+          </ul>
+        </section>
+        
+        <hr>
 
-    <h2>Recent writing</h2>
+        <footer>
+          <small>Hacked together with <a href="https://jekyllrb.com/">Jekyll</a> and hosted with <i class="fa fa-heart"></i> on <a href="https://github.com/pammkins">GitHub Pages</a>.</small>
+        </footer>
+      </div>
+    
+    </div>
 
-      <ul class="posts post-list mediumfeed" id="container">
-        here
-      </ul>
-
-  <script type="text/html" id="exampleTemplate">
-    <li class="post-stub" >
-      <a title="<!=title!>" href="<!=link!>"><!=title!></a>
-    </li>
-  </script>
+   </div> 
 
   </div>
 
@@ -82,6 +103,12 @@
    },
    entryTemplate: 'exampleTemplate'
     });
+  </script>
+
+  <script type="text/html" id="exampleTemplate">
+    <li class="post-stub" >
+      <a title="<!=title!>" href="<!=link!>"><!=title!></a>
+    </li>
   </script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
