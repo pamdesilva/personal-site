@@ -4,7 +4,7 @@ layout: default
 
 ##Hi there, I’m Pam.
 
-When I’m not on the prowl for a good waffle in Kuala Lumpur, I use **content marketing** to help great companies woo new users and make their current ones love them even more.
+When I’m not on the prowl for a good waffle, I spend my time using **content marketing** to help great companies woo new users and make their current ones love them even more.
 
 No two gigs are ever the same. I’ve done everything from working with a celebrity blogger, handling branding and PR for whimsical F&B ventures, spreading the importance of learning English.. and then some. I’ve even helped a *unicorn* startup with their email marketing.
 

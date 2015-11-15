@@ -1,33 +1,20 @@
 body {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 2em;
 	line-height: 150%;
+	font-size: 1.65rem;
 }
 
-a {
-	transition: linear 0.2s;
+.main-text {
+	width: 100%;
+	max-width: 750px;
 }
 
-.container {
-	max-width: 100%;
+/*Universal column styling*/
+.col-left, .col-right {
+	padding: 5%;
 }
-
-.fa-heart {
-	color:red;
-}
-
-.profilepic {
-	max-width: 100%;
-	border-radius: 100%;
-	width:200px;
-}
-
-
 
 .col-left {
-	width: 35%;
-    height: 100%;
-    position: fixed;
     background: 
 	    linear-gradient(
 	      rgba(3, 81, 99, 0.96),
@@ -43,47 +30,72 @@ a {
 	.col-left a {
 		color: rgba(255, 255, 255, 0.71);
 		text-decoration: none;
-
 	}
 
-	.col-left a:hover {
-		color: rgba(255, 255, 255, 1);
-	}
+		.col-left a:hover {
+			color: rgba(255, 255, 255, 1);
+		}
 
-	.col-left hr {
-		border-top: 1px solid rgba(238, 238, 238, 0.45);
-	}
-
-	.col-left h1 {
-		font-weight: 700;
-	}
+		.col-left hr {
+			border-top: 1px solid rgba(238, 238, 238, 0.45);
+		}
 
 
-.col-right {
-	width: 64%;
-    float: right;
-    display: inline-block;
+.profilepic {
+	max-width: 100%;
+	border-radius: 100%;
+	width: 100px;
 }
 
-	.col-right hr {
-		margin: 2em 0;
+
+@media screen and (min-width: 700px) {
+
+	body {
+		font-size: 2rem;
 	}
 
-.col-left, .col-right {
-	padding: 3em;
+	.col-left {
+		width: 35%;
+	    height: 100%;
+	    position: fixed;
+	}
+	.col-right {
+		width: 64%;
+	    float: right;
+	    display: inline-block;
+	}
+
+		.col-right hr {
+			margin-bottom: 2em;
+		}
+
+		.col-right h2 {
+			margin-bottom:1em;
+		}
+
+	.profilepic {
+		width: 200px;
+	}
 }
 
-.container {
-	max-width: 750px;
-	float: left;
+/*Little global things*/
+
+a {
+	transition: linear 0.2s;
 }
 
-.col-right h2 {
-	margin-bottom:1em;
+h1 {
+	font-weight: 700;
 }
 
 p, ul {
 	margin-bottom: 1.3em;
 }
 
+.fa-heart {
+	color:red;
+}
 
+.socialicons {
+	margin-bottom: 0;
+}

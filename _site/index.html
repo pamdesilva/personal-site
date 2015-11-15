@@ -23,7 +23,7 @@
 
   <div class="full-container">  
 
-    <div class="col-left">
+    <header class="col-left">
       <img class="profilepic" src="/assets/img/profile_square.jpg" alt="">
       <h1>Pam De Silva</h1>
       <h4>Content Strategist</h4>
@@ -32,7 +32,7 @@
       <hr>
 
       <section>
-        <ul class="list-unstyled socialicons">
+        <ul class="list-inline socialicons">
           <li><a href="mailto:pam.desilva@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
           <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
           <li><a href="https://medium.com/@pamdesilva"><i class="fa fa-medium"></i> Medium</a></li>
@@ -40,15 +40,15 @@
           <li><a href="https://github.com/pammkins"><i class="fa fa-github"></i> GitHub</a></li>
         </ul>
       </section>
-    </div>
+    </header>
 
-    <div class="col-right">
+    <article class="col-right">
 
-      <div class="container">
-        <section class="main-text">
+      <div class="main-text">
+        <section>
           <h2 id="hi-there-im-pam">Hi there, I’m Pam.</h2>
 
-<p>When I’m not on the prowl for a good waffle in Kuala Lumpur, I use <strong>content marketing</strong> to help great companies woo new users and make their current ones love them even more.</p>
+<p>When I’m not on the prowl for a good waffle, I spend my time using <strong>content marketing</strong> to help great companies woo new users and make their current ones love them even more.</p>
 
 <p>No two gigs are ever the same. I’ve done everything from working with a celebrity blogger, handling branding and PR for whimsical F&amp;B ventures, spreading the importance of learning English.. and then some. I’ve even helped a <em>unicorn</em> startup with their email marketing.</p>
 
@@ -75,7 +75,7 @@
 
         <section>
           <h2>A few things I've written recently</h2>
-          <ul class="posts post-list mediumfeed" id="container">
+          <ul class="posts post-list mediumfeed" id="feed-container">
           loading posts from Medium...
           </ul>
         </section>
@@ -87,9 +87,7 @@
         </footer>
       </div>
     
-    </div>
-
-   </div> 
+    </article>
 
   </div>
 
@@ -97,7 +95,7 @@
   <script src="/assets/js/jquery.feeds.js"></script>
 
   <script>
-  $('#container').feeds({
+  $('#feed-container').feeds({
    feeds: {
      blog: 'https://medium.com/feed/@pamdesilva/',
    },
