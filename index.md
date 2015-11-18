@@ -19,6 +19,6 @@ Here’s what I do most:
 
 When it comes to clients, I’m a *less is more* kind of person. Trying to juggle 42 different projects at the same time isn’t quite my cup of [teh tarik](https://en.wikipedia.org/wiki/Teh_tarik).
 
-Yes, I work remotely, but I'd rather not be *‘that content person somewhere over there in Asia who writes us a thousand words a month’*. I’m here to work with your team to help you do content marketing that can actually help you grow.
+Yes, I work remotely, but I'd rather not be *‘that content person who writes us a thousand words a month’*. I’m here to work with your team to help you do content marketing that can actually help you grow.
 
 Think we’d be a good match? Let’s have a chat: #swiperight and [get in touch](mailto:pam.desilva@gmail.com).
