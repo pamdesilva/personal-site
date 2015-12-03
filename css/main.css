@@ -99,3 +99,7 @@ p, ul {
 .socialicons {
 	margin-bottom: 0;
 }
+
+li {
+	text-decoration: none;
+}
