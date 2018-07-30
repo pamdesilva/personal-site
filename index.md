@@ -2,23 +2,12 @@
 layout: default
 ---
 
-##Hi there, I’m Pam.
+I'm Pam, an aspiring **frontend developer** with a background in marketing.
 
-When I’m not on the prowl for a good waffle, I spend my time using **content marketing** to help startups and SMEs woo new users and make their current ones love them even more.
+Previously, I worked with startups, SMEs and non-profits, helping them grow their user base through content and growth marketing. I’ve done everything—from working with influential bloggers to handling branding and PR for F&B ventures to managing a podcast on digital health and more.
 
-No two gigs are ever the same. I’ve done everything from working with a celebrity blogger, handling branding and PR for whimsical F&B ventures, spreading the importance of learning English.. and then some. I’ve even helped a unicorn startup with their email marketing.
+Everything was smooth sailing until I got bitten by the programming bug and realised there was no turning back.
 
-Here’s what I do most:
+I'm currently teaching myself frontend development and React (Vue's next on the list). My goal is to join an engineering team who will give me the support in becoming a better developer and to contribute towards building a product or service that makes a difference.
 
-- **Content strategy** and **content marketing**
-- **Email marketing**
-- **Social media management**
-- **Copywriting** and **editing**
-- A little **growth hacking**
-- And some **design** and **coding** on the side
-
-When it comes to clients, I’m a *less is more* kind of person. Trying to juggle 42 different projects at the same time isn’t quite my cup of [teh tarik](https://en.wikipedia.org/wiki/Teh_tarik).
-
-Yes, I work remotely, but I'd rather not be *‘that content person who writes us a thousand words a month’*. I’m here to work with your team to help you do content marketing that can actually help you grow.
-
-Think we’d be a good match? Let’s have a chat: #swiperight and [get in touch](mailto:pam.desilva@gmail.com).
+<a href='mailto:pam.desilva@gmail.com'>Drop me a line</a>. I'm always up for a chat over some matcha latte. 🍵

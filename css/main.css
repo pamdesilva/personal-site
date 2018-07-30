@@ -15,36 +15,43 @@ body {
 }
 
 .col-left {
-    background: 
-	    linear-gradient(
-	      rgba(3, 81, 99, 0.96),
-	      rgba(52, 3, 99, 0.65)
-	      
-	    ),
-	    url(/assets/img/col-left-background.jpg);
+  background:
+    linear-gradient(
+      rgba(3, 81, 99, 0.96),
+      rgba(52, 3, 99, 0.65)
+    ),
+    url(/assets/img/col-left-background.jpg);
 	background-size: cover;
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
-	.col-left a {
-		color: rgba(255, 255, 255, 0.71);
-		text-decoration: none;
-	}
+.col-left a {
+	color: rgba(255, 255, 255, 0.71);
+	text-decoration: none;
+}
 
-		.col-left a:hover {
-			color: rgba(255, 255, 255, 1);
-		}
+.col-left a:hover {
+	color: rgba(255, 255, 255, 1);
+}
 
-		.col-left hr {
-			border-top: 1px solid rgba(238, 238, 238, 0.45);
-		}
+.col-left hr {
+	border-top: 1px solid rgba(238, 238, 238, 0.45);
+}
 
 
 .profilepic {
 	max-width: 100%;
 	border-radius: 100%;
 	width: 100px;
+}
+
+.contact {
+	font-size: 17px;
+}
+
+footer {
+	font-size: 15px;
 }
 
 
@@ -55,23 +62,23 @@ body {
 	}
 
 	.col-left {
-		width: 35%;
-	    height: 100%;
-	    position: fixed;
+		width: 28%;
+    height: 100%;
+    position: fixed;
 	}
 	.col-right {
-		width: 64%;
-	    float: right;
-	    display: inline-block;
+		width: 70%;
+    float: right;
+    display: inline-block;
 	}
 
-		.col-right hr {
-			margin-bottom: 2em;
-		}
+	.col-right hr {
+		margin-bottom: 2em;
+	}
 
-		.col-right h2 {
-			margin-bottom:1em;
-		}
+	.col-right h2 {
+		margin-bottom:1em;
+	}
 
 	.profilepic {
 		width: 200px;
