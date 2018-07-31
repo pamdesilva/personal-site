@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I'm Pam, an aspiring **frontend developer** with a background in marketing.
+I'm Pam, an aspiring **web developer** with a background in marketing.
 
 Previously, I worked with startups, SMEs and non-profits, helping them grow their user base through content and growth marketing. I’ve done everything—from working with influential bloggers to handling branding and PR for F&B ventures to managing a podcast on digital health and more.
 
