@@ -12,4 +12,4 @@ I'm currently a part of [BT FurtHER](https://www.codefirstgirls.org.uk/bt--cfg-d
 
 I'm now looking for my next Junior Development role—hungry to be a part of a team who are using modern web technologies and able to give me the opportunities and support I need in order to grow into an experienced software developer.
 
-Keen to chat?<a href='mailto:pam.desilva@gmail.com'>Drop me a line 👋</a>
+Keen to chat? <a href='mailto:pam.desilva@gmail.com'>Drop me a line 👋</a>
