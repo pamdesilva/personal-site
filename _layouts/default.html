@@ -1,121 +1,204 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
+    <title>
+      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+    </title>
+    <meta
+      name="description"
+      content="{% if page.excerpt %}{{
+        page.excerpt | strip_html | strip_newlines | truncate: 160
+      }}{% else %}{{ site.description }}{% endif %}"
+    />
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/css/main.css' | prepend: site.baseurl }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link
+      rel="canonical"
+      href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title }}"
+      href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-</head>
+  <body>
+    <div class="full-container">
+      <header class="col-left">
+        <img class="profilepic" src="/assets/img/pam_sqr.jpg" alt="" />
+        <h1>Pam De Silva</h1>
+        <small><i class="fa fa-map-marker"> </i> London</small>
 
-<body>
+        <hr />
 
-  <div class="full-container">
-
-    <header class="col-left">
-      <img class="profilepic" src="/assets/img/pam_sqr.jpg" alt="">
-      <h1>Pamela De Silva</h1>
-      <small><i class="fa fa-map-marker"> </i> London</small>
-
-      <hr>
-
-      <section>
-        <ul class="list-inline socialicons">
-          <li><a href="https://twitter.com/pam_desilva"><i class="fa fa-twitter"></i> Twitter</a></li>
-          <li><a href="https://github.com/pamdesilva"><i class="fa fa-github"></i> GitHub</a></li>
-          <li><a href="https://my.linkedin.com/in/pamela-de-silva-57223955"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
-      </section>
-    </header>
-
-    <article class="col-right">
-
-      <div class="main-text">
         <section>
-          <h2>Hi there 👋</h2>
-          {{ content }}
-        </section>
-
-        <hr>
-
-        <section>
-          <h3>Here are some things I built recently</h3>
-          <ul>
+          <ul class="list-inline socialicons">
             <li>
-              🍕 <a href='https://slices.pamela.io/'>Slices</a> (React). An online pizza store. <a href='https://github.com/pamdesilva/pizza-app'>GitHub</a>
+              <a href="https://twitter.com/pam_desilva"
+                ><i class="fa fa-twitter"></i> Twitter</a
+              >
             </li>
             <li>
-              🍿 <a href='https://moviequotes.pamela.io/'>Movie quote generator</a> (React). Get famous movie quotes. <a href='https://github.com/pamdesilva/quote-machine-react'>GitHub</a>
+              <a href="https://github.com/pamdesilva"
+                ><i class="fa fa-github"></i> GitHub</a
+              >
             </li>
             <li>
-              🐾 <a href='https://pawmodoro.pamela.io/'>Pawmodoro timer</a> - a simple countdown timer. <a href='https://github.com/pamdesilva/fcc-pomodoro-timer/'>GitHub</a>
-            </li>
-            <li>
-              🔍<a href='https://wikipedia.pamela.io/'> Wikipedia search app</a> - lists Wikipedia articles based on search term. <a href='https://github.com/pamdesilva/fcc-wikipedia'>GitHub</a>
-            </li>
-            <li>
-              ☔️ <a href='https://weather.pamela.io/'>Weather app</a> - displays the weather in your area. <a href='https://github.com/pamdesilva/fcc-weatherapp'>GitHub</a>
-            </li>
-            <li>
-              ➕<a href='https://calculator.pamela.io/'>Calculator</a> - does basic calculations. <a href='https://github.com/pamdesilva/fcc-calculator'>GitHub</a>
+              <a href="https://my.linkedin.com/in/pamela-de-silva-57223955"
+                ><i class="fa fa-linkedin"></i> LinkedIn</a
+              >
             </li>
           </ul>
         </section>
+      </header>
 
-        <hr>
+      <article class="col-right">
+        <div class="main-text">
+          <section>
+            <h2>Hi there 👋</h2>
+            {{ content }}
+          </section>
 
-        <footer>
-          <small>Stitched together with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://www.netlify.com/"> Netlify <i class="fa fa-heart"></i></a></small>
-        </footer>
-      </div>
+          <hr />
 
-    </article>
+          <section>
+            <h3>Some things I've built (for fun):</h3>
+            <ul>
+              <li>
+                🍕 <a href="https://slices.pamela.io/">Slices</a> (React) -
+                order from a selection of pretend pizzas.
+                <a href="https://github.com/pamdesilva/pizza-app">GitHub</a>
+              </li>
+              <li>
+                🍿
+                <a href="https://moviequotes.pamela.io/"
+                  >Movie quote generator</a
+                >
+                (React) - shuffle between famous movie quotes.
+                <a href="https://github.com/pamdesilva/quote-machine-react"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                🐾 <a href="https://pawmodoro.pamela.io/">Pawmodoro timer</a> -
+                countdown timer + dog paws.
+                <a href="https://github.com/pamdesilva/fcc-pomodoro-timer/"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                🔍<a href="https://wikipedia.pamela.io/">
+                  Wikipedia search app</a
+                >
+                - lookup Wikipedia articles.
+                <a href="https://github.com/pamdesilva/fcc-wikipedia">GitHub</a>
+              </li>
+              <li>
+                ☔️ <a href="https://weather.pamela.io/">Weather app</a> - check
+                the weather in your area.
+                <a href="https://github.com/pamdesilva/fcc-weatherapp"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                ➕<a href="https://calculator.pamela.io/">Calculator</a> - run
+                some basic calculations.
+                <a href="https://github.com/pamdesilva/fcc-calculator"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </section>
 
-  </div>
+          <hr />
 
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          <footer>
+            <small
+              >Stitched together with
+              <a href="https://jekyllrb.com/">Jekyll</a> and hosted on
+              <a href="https://www.netlify.com/">
+                Netlify <i class="fa fa-heart"></i></a
+            ></small>
+          </footer>
+        </div>
+      </article>
+    </div>
 
-  ga('create', 'UA-50029165-3', 'auto');
-  ga('send', 'pageview');
-  </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="/assets/js/jquery.feeds.js"></script>
+      ga('create', 'UA-50029165-3', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-  <!-- Medium Feed -->
-  <script>
-  $('#feed-container').feeds({
-   feeds: {
-     blog: 'https://medium.com/feed/@pamdesilva/',
-   },
-   entryTemplate: 'exampleTemplate'
-    });
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/assets/js/jquery.feeds.js"></script>
 
-  <script type="text/html" id="exampleTemplate">
-    <li class="post-stub" >
-      <a title="<!=title!>" href="<!=link!>><!=title!>"</a>
-    </li>
-  </script>
+    <!-- Medium Feed -->
+    <script>
+      $('#feed-container').feeds({
+        feeds: {
+          blog: 'https://medium.com/feed/@pamdesilva/'
+        },
+        entryTemplate: 'exampleTemplate'
+      });
+    </script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script type="text/html" id="exampleTemplate">
+      <li class="post-stub" >
+        <a title="<!=title!>" href="<!=link!>><!=title!>"</a>
+      </li>
+    </script>
 
-</body>
-
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+      integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
