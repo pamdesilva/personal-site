@@ -2,4 +2,4 @@
 layout: default
 ---
 
-I'm Pam, a matcha enthusiast 🍵, sloth fan and junior software engineer at [LoyaltyLion](https://www.loyaltylion.com).
+I'm Pam, a matcha enthusiast 🍵 and software engineer with a frontend focus.
