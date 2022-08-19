@@ -15,13 +15,9 @@ body {
 }
 
 .col-left {
-  background:
-    linear-gradient(
-      rgba(3, 81, 99, 0.96),
-      rgba(52, 3, 99, 0.65)
-    ),
-    url(/assets/img/col-left-background.jpg);
-	background-size: cover;
+  background: #642B73;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   color: white;
 }
